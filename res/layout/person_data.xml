@@ -1,0 +1,162 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/background_person">
+    
+    <LinearLayout 
+	   android:layout_width="match_parent"
+       android:layout_height="45dp"
+       android:orientation="vertical"
+       android:gravity="center"
+       android:background="#C0ABA5">
+       
+       <TableLayout 
+    android:orientation="vertical"
+    android:shrinkColumns="0,1,2,3,4"   
+    android:stretchColumns="0,1,2,3,4" 
+    android:gravity="center"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+	    
+	     <TableRow android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+	        
+		<Button 
+           android:layout_width="15dp"
+           android:layout_height="30dp"
+           android:id="@+id/back"
+           android:layout_marginLeft="20dp"
+           android:gravity="center"
+           android:background="@drawable/backbtn"/>
+		
+		<Button 
+           android:layout_width="5dp"
+           android:layout_height="30dp"
+           android:layout_marginRight="20dp"
+           android:gravity="center"
+           android:background="@drawable/blank"/>
+       
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="乐游湿地·个人资料"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" 
+        android:gravity="center"
+        android:layout_marginRight="2dp"/>
+    
+    <Button 
+           android:layout_width="5dp"
+           android:layout_height="30dp"
+           android:layout_marginRight="20dp"
+           android:gravity="center"
+           android:background="@drawable/blank"/>
+    
+    <Button 
+           android:layout_width="15dp"
+           android:layout_height="30dp"
+           android:layout_marginRight="20dp"
+           android:gravity="center"
+           android:background="@drawable/blank"/>
+    	
+    	</TableRow>
+    	
+    	</TableLayout>
+       
+       
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="username"
+        android:textSize="16dp"
+        android:visibility="gone"
+        android:layout_marginRight="2dp" />
+
+    <TextView
+       android:id="@+id/logout"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="退出"
+       android:textColor="#2A00FF"
+       android:textSize="16sp" 
+       android:visibility="gone"
+       android:layout_marginRight="10dp"/>
+    
+    </LinearLayout>
+    
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="78dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/data" />
+    
+    <LinearLayout 
+    android:layout_width="match_parent"
+  	android:layout_height="wrap_content"
+  	android:padding="15dip"        
+  	android:layout_margin="15dip" 
+  	android:orientation="vertical" 
+  	android:focusable="true"   
+	android:focusableInTouchMode="true">
+    
+    <EditText
+        android:id="@+id/sex"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint = "#FFFFFF" 
+        android:background="@drawable/background_login_edit"
+        android:layout_marginBottom="15dp"
+        android:drawableLeft="@drawable/editblank" 
+        android:textCursorDrawable="@null"
+        android:ems="10"
+        android:hint="性&#160;&#160;&#160;&#160;&#160;&#160;别" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint = "#FFFFFF" 
+        android:background="@drawable/background_login_edit"
+        android:layout_marginBottom="15dp"
+        android:drawableLeft="@drawable/editblank" 
+        android:textCursorDrawable="@null"
+        android:inputType="phone"
+        android:ems="10"
+        android:hint="手&#160;&#160;&#160;&#160;&#160;&#160;机" />
+    
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint = "#FFFFFF" 
+        android:background="@drawable/background_login_edit"
+        android:layout_marginBottom="15dp"
+        android:drawableLeft="@drawable/editblank" 
+        android:textCursorDrawable="@null"
+        android:ems="10"
+        android:hint="邮&#160;&#160;&#160;&#160;&#160;&#160;箱" />
+    
+    <Button 
+           android:id="@+id/handin"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_centerInParent="true"
+           android:layout_alignParentLeft="true"
+           android:textColor="#FFFFFF"
+           android:text="点击修改资料"
+           android:background="@drawable/background_reg"
+           />
+ 
+
+	</LinearLayout>
+
+
+
+</LinearLayout>

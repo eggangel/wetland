@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+	<LinearLayout 
+       android:layout_width="match_parent"
+       android:layout_height="45dp"
+       android:orientation="horizontal"
+       android:gravity="center"
+       android:background="#C0ABA5"
+       >
+       
+	<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="主页·全国最美湿地推送"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" 
+        android:layout_marginRight="2dp"/>
+	    
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="username"
+        android:textSize="16sp" 
+        android:layout_marginRight="2dp"/>
+    
+    <TextView
+       android:visibility="gone"
+       android:id="@+id/logout"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="退出"
+       android:textColor="#2A00FF"
+       android:textSize="16sp" 
+       android:layout_marginRight="20dp"/>
+    </LinearLayout>
+    
+    <RelativeLayout 
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       >
+    
+    <Gallery
+        android:id="@+id/gallery"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:soundEffectsEnabled="false"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/gallery"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/focused" />
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/normal" />
+        <ImageView
+            android:id="@+id/image3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/normal" />
+        <ImageView
+            android:id="@+id/image4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/normal" />
+        
+    </LinearLayout> 
+	
+	</RelativeLayout>
+	
+    <LinearLayout 
+        android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"       
+  		android:layout_margin="15dip" 
+	    android:gravity="center">
+        <TextView
+            android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:text="[湿地公园（Wetland Park）]\n是指以水为主题的公园。\n以湿地良好生态环境和多样化湿地景观资源为基础，以湿地的科普宣教、湿地功能利用、弘扬湿地文化等为主题，可供人们旅游观光、休闲娱乐，是具有湿地保护与利用、科普教育、湿地研究、生态观光、休闲娱乐等多种功能的社会公益性生态公园。"
+        	android:textSize="16sp" />
+    </LinearLayout>
+	
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="horizontal" 
+	    android:gravity="bottom|center">
+    
+    
+    
+	    <TableLayout 
+    android:orientation="vertical"
+    android:shrinkColumns="0,1,2,3,4"   
+    android:stretchColumns="0,1,2,3,4" 
+    android:layout_width="fill_parent"
+    android:layout_height="55dp" 
+    android:background="#814326">
+	    
+	     <TableRow android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+	        
+	    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:background="@drawable/button1"
+         />
+	    
+	    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:background="@drawable/button2"
+         />
+    	
+    	<Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:background="@drawable/button3"
+         />
+    	
+    	<Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:background="@drawable/button4"
+         />
+    	
+    	<Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:background="@drawable/button5"
+         />
+    	
+    	</TableRow>
+    	
+    	</TableLayout>
+    
+	</LinearLayout>
+    
+
+</LinearLayout>

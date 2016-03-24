@@ -1,0 +1,170 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/background_person">
+    
+    <LinearLayout 
+	   android:layout_width="match_parent"
+       android:layout_height="45dp"
+       android:orientation="horizontal"
+       android:gravity="center"
+       android:background="#C0ABA5">
+       
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="乐游湿地·个人资料"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" 
+        android:layout_marginRight="2dp"/>
+    
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:gravity="center">
+        
+        <TextView 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:textColor="#FFFFFF"
+            android:id="@+id/user"
+            android:text="username"
+            android:textSize="30dp"
+            />
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:textColor="#FFFFFF"
+            android:padding="5dp"
+            android:text="个性签名： "
+            android:textSize="15dp"
+            />
+            
+                    <TextView
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:textColor="#FFFFFF"
+            android:id="@+id/sentence"
+            android:padding="5dp"
+            android:text="单击以编辑个性签名"
+            android:textSize="15dp"
+            android:background="@drawable/background_reg_press"
+            />
+            
+        </LinearLayout>
+
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+        <Button
+            android:id="@+id/person1"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="60dp"
+            android:background="@drawable/person1" />
+        
+        <Button
+            android:id="@+id/person2"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="60dp"
+            android:background="@drawable/person2" />
+        
+        <Button
+            android:id="@+id/person3"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="60dp"
+            android:background="@drawable/person3" />
+        
+    </LinearLayout>
+    
+    <Button 
+           android:id="@+id/exit"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_centerInParent="true"
+           android:layout_alignParentLeft="true"
+           android:textColor="#FFFFFF"
+           android:textSize="25dp"
+           android:text="退出登录"
+           android:layout_marginTop="10dp"
+           android:background="#E55336"
+           />
+    
+    <LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="horizontal" 
+	    android:gravity="bottom|center">
+    
+    
+    
+	    <TableLayout 
+    android:orientation="vertical"
+    android:shrinkColumns="0,1,2,3,4"   
+    android:stretchColumns="0,1,2,3,4" 
+    android:layout_width="fill_parent"
+    android:layout_height="55dp" 
+    android:background="#814326">
+	    
+	     <TableRow android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+	        
+	    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:background="@drawable/button1"
+         />
+	    
+	    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:background="@drawable/button2"
+         />
+    	
+    	<Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:background="@drawable/button3"
+         />
+    	
+    	<Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:background="@drawable/button4"
+         />
+    	
+    	<Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:background="@drawable/button5"
+         />
+    	
+    	</TableRow>
+    	
+    	</TableLayout>
+    
+	</LinearLayout>
+
+</LinearLayout>
